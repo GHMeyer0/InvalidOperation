@@ -1,0 +1,6 @@
+@InvalidOperation.Api_HostAddress = http://localhost:5115
+
+GET {{InvalidOperation.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
