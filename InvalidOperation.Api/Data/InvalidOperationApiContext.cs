@@ -26,8 +26,8 @@ namespace InvalidOperation.Api.Data
                   ownedNavigationBuilder.OwnsMany(
                         paramters => paramters.Actions, ownedOwnedNavigationBuilder =>
                           {
-                              ownedOwnedNavigationBuilder.OwnsOne(action => action.EMailParameter);
-                              ownedOwnedNavigationBuilder.OwnsOne(action => action.SMSParameter);
+                              ownedOwnedNavigationBuilder.OwnsOne(action => action.Email);
+                              ownedOwnedNavigationBuilder.OwnsOne(action => action.Sms);
                           });
               });
         }
